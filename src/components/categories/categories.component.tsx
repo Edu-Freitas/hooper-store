@@ -1,5 +1,7 @@
 import { useContext, useEffect } from 'react'
 import { CategoryContext } from '../../contexts/category.context'
+import CategoryItem from '../category-item/category-item.component'
+import { CategoriesContainer, CategoriesContent } from './categories.styles'
 
 const Categories = () => {
   const { categories, fetchCategories } = useContext(CategoryContext)
@@ -9,11 +11,13 @@ const Categories = () => {
   }, [])
 
   return (
-    <div>
-      {categories.map((category) => (
-        <p>{category.displayName}</p>
-      ))}
-    </div>
+    <CategoriesContainer>
+      <CategoriesContent>
+        {categories.map((category) => (
+          <CategoryItem key={category.id} category={category}></CategoryItem>
+        ))}
+      </CategoriesContent>
+    </CategoriesContainer>
   )
 }
 
