@@ -16,87 +16,6 @@ const db = getFirestore(app)
 
 const categories = [
   {
-    id: '6228fc5cb7e6cb904bbe014b',
-    name: 'sneakers',
-    displayName: 'Tênis',
-    imageUrl:
-      'https://i.pinimg.com/564x/3e/aa/a7/3eaaa77b8c322c02d4d2d8c2ca51efc3.jpg',
-    products: [
-      {
-        id: '6228fc8bb7e6cb904bbe014e',
-        name: 'D-Rose Son of Chi 2',
-        price: 1.9,
-        imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-adidas-d-rose-son-of-chi-2/08/3ZP-9541-008/3ZP-9541-008_zoom1.jpg?ts=1657391310&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-adidas-d-rose-son-of-chi-2/08/3ZP-9541-008/3ZP-9541-008_zoom2.jpg?ts=1657391310&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-adidas-d-rose-son-of-chi-2/08/3ZP-9541-008/3ZP-9541-008_zoom2.jpg?ts=1657391310&?ims=1088x'
-        ]
-      },
-      {
-        id: '6228fcb9b7e6cb904bbe0152',
-        name: 'NBA Nike Kd Trey 5 X',
-        price: 2.9,
-        imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-nba-nike-kd-trey-5-x-masculino/73/2IC-8920-473/2IC-8920-473_zoom1.jpg?ts=1660733919&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-nba-nike-kd-trey-5-x-masculino/73/2IC-8920-473/2IC-8920-473_zoom2.jpg?ts=1660733919&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-nba-nike-kd-trey-5-x-masculino/73/2IC-8920-473/2IC-8920-473_zoom2.jpg?ts=1660733919&?ims=1088x'
-        ]
-      },
-      {
-        id: '6228fce4b7e6cb904bbe0154',
-        name: 'Nike Precision VI',
-        price: 3.5,
-        imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-nike-precision-vi-masculino/68/2IC-7496-868/2IC-7496-868_zoom1.jpg?ts=1659100370&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-nike-precision-vi-masculino/68/2IC-7496-868/2IC-7496-868_zoom2.jpg?ts=1659100370&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-nike-precision-vi-masculino/68/2IC-7496-868/2IC-7496-868_zoom2.jpg?ts=1659100370&?ims=1088x'
-        ]
-      },
-      {
-        id: '6228fd19b7e6cb904bbe0157',
-        name: 'Puma Triple Mid',
-        price: 2.9,
-        imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-puma-triple-mid/74/2I3-3747-274/2I3-3747-274_zoom1.jpg?ts=1659712006&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-puma-triple-mid/74/2I3-3747-274/2I3-3747-274_zoom2.jpg?ts=1659712006&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-puma-triple-mid/74/2I3-3747-274/2I3-3747-274_zoom2.jpg?ts=1659712006&?ims=1088x'
-        ]
-      },
-      {
-        id: '6228fd3bb7e6cb904bbe015a',
-        name: 'Under Armour Buzzer',
-        price: 1.5,
-        imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-under-armour-buzzer-masculino/72/39W-3125-172/39W-3125-172_zoom1.jpg?ts=1657802554&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-under-armour-buzzer-masculino/72/39W-3125-172/39W-3125-172_zoom2.jpg?ts=1657802554&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-under-armour-buzzer-masculino/72/39W-3125-172/39W-3125-172_zoom2.jpg?ts=1657802554&?ims=1088x'
-        ]
-      },
-      {
-        id: '6228fda4b7e6cb904bbe015f',
-        name: 'Nike KD15',
-        price: 4.9,
-        imageUrl: [
-          'https://imgnike-a.akamaihd.net/900x900/023704ID.jpg',
-          'https://imgnike-a.akamaihd.net/900x900/023704IDA4.jpg'
-        ]
-      },
-      {
-        id: '6228fca3b7e6cb904bbe0150',
-        name: 'Adidas Pró Next N3XT 2021',
-        price: 1.5,
-        imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-adidas-pro-next-n3xt-2021/02/3ZP-9544-002/3ZP-9544-002_zoom1.jpg?ts=1657402674&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-adidas-pro-next-n3xt-2021/02/3ZP-9544-002/3ZP-9544-002_zoom2.jpg?ts=1657402674&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-adidas-pro-next-n3xt-2021/02/3ZP-9544-002/3ZP-9544-002_zoom2.jpg?ts=1657402674&?ims=1088x'
-        ]
-      },
-      {
-        id: '6228fd63b7e6cb904bbe015c',
-        name: 'NIKE KD14 NRG',
-        price: 6.9,
-        imageUrl: [
-          'https://imgnike-a.akamaihd.net/900x900/02333715.jpg',
-          'https://imgnike-a.akamaihd.net/900x900/02333715A4.jpg'
-        ]
-      }
-    ]
-  },
-  {
     id: '6228f760b7e6cb904bbe012e',
     name: 'balls',
     displayName: 'Bolas',
@@ -178,11 +97,92 @@ const categories = [
     ]
   },
   {
+    id: '6228fc5cb7e6cb904bbe014b',
+    name: 'sneakers',
+    displayName: 'Tênis',
+    imageUrl:
+      'https://i.pinimg.com/564x/3e/aa/a7/3eaaa77b8c322c02d4d2d8c2ca51efc3.jpg',
+    products: [
+      {
+        id: '6228fc8bb7e6cb904bbe014e',
+        name: 'D-Rose Son of Chi 2',
+        price: 1.9,
+        imageUrl: [
+          'https://static.netshoes.com.br/produtos/tenis-adidas-d-rose-son-of-chi-2/08/3ZP-9541-008/3ZP-9541-008_zoom1.jpg?ts=1657391310&ims=544x',
+          'https://static.netshoes.com.br/produtos/tenis-adidas-d-rose-son-of-chi-2/08/3ZP-9541-008/3ZP-9541-008_zoom2.jpg?ts=1657391310&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-adidas-d-rose-son-of-chi-2/08/3ZP-9541-008/3ZP-9541-008_zoom2.jpg?ts=1657391310&?ims=1088x'
+        ]
+      },
+      {
+        id: '6228fcb9b7e6cb904bbe0152',
+        name: 'NBA Nike Kd Trey 5 X',
+        price: 2.9,
+        imageUrl: [
+          'https://static.netshoes.com.br/produtos/tenis-nba-nike-kd-trey-5-x-masculino/73/2IC-8920-473/2IC-8920-473_zoom1.jpg?ts=1660733919&ims=544x',
+          'https://static.netshoes.com.br/produtos/tenis-nba-nike-kd-trey-5-x-masculino/73/2IC-8920-473/2IC-8920-473_zoom2.jpg?ts=1660733919&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-nba-nike-kd-trey-5-x-masculino/73/2IC-8920-473/2IC-8920-473_zoom2.jpg?ts=1660733919&?ims=1088x'
+        ]
+      },
+      {
+        id: '6228fce4b7e6cb904bbe0154',
+        name: 'Nike Precision VI',
+        price: 3.5,
+        imageUrl: [
+          'https://static.netshoes.com.br/produtos/tenis-nike-precision-vi-masculino/68/2IC-7496-868/2IC-7496-868_zoom1.jpg?ts=1659100370&ims=544x',
+          'https://static.netshoes.com.br/produtos/tenis-nike-precision-vi-masculino/68/2IC-7496-868/2IC-7496-868_zoom2.jpg?ts=1659100370&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-nike-precision-vi-masculino/68/2IC-7496-868/2IC-7496-868_zoom2.jpg?ts=1659100370&?ims=1088x'
+        ]
+      },
+      {
+        id: '6228fd19b7e6cb904bbe0157',
+        name: 'Puma Triple Mid',
+        price: 2.9,
+        imageUrl: [
+          'https://static.netshoes.com.br/produtos/tenis-puma-triple-mid/74/2I3-3747-274/2I3-3747-274_zoom1.jpg?ts=1659712006&ims=544x',
+          'https://static.netshoes.com.br/produtos/tenis-puma-triple-mid/74/2I3-3747-274/2I3-3747-274_zoom2.jpg?ts=1659712006&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-puma-triple-mid/74/2I3-3747-274/2I3-3747-274_zoom2.jpg?ts=1659712006&?ims=1088x'
+        ]
+      },
+      {
+        id: '6228fd3bb7e6cb904bbe015a',
+        name: 'Under Armour Buzzer',
+        price: 1.5,
+        imageUrl: [
+          'https://static.netshoes.com.br/produtos/tenis-under-armour-buzzer-masculino/72/39W-3125-172/39W-3125-172_zoom1.jpg?ts=1657802554&ims=544x',
+          'https://static.netshoes.com.br/produtos/tenis-under-armour-buzzer-masculino/72/39W-3125-172/39W-3125-172_zoom2.jpg?ts=1657802554&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-under-armour-buzzer-masculino/72/39W-3125-172/39W-3125-172_zoom2.jpg?ts=1657802554&?ims=1088x'
+        ]
+      },
+      {
+        id: '6228fda4b7e6cb904bbe015f',
+        name: 'Nike KD15',
+        price: 4.9,
+        imageUrl: [
+          'https://imgnike-a.akamaihd.net/900x900/023704ID.jpg',
+          'https://imgnike-a.akamaihd.net/900x900/023704IDA4.jpg'
+        ]
+      },
+      {
+        id: '6228fca3b7e6cb904bbe0150',
+        name: 'Adidas Pró Next N3XT 2021',
+        price: 1.5,
+        imageUrl: [
+          'https://static.netshoes.com.br/produtos/tenis-adidas-pro-next-n3xt-2021/02/3ZP-9544-002/3ZP-9544-002_zoom1.jpg?ts=1657402674&ims=544x',
+          'https://static.netshoes.com.br/produtos/tenis-adidas-pro-next-n3xt-2021/02/3ZP-9544-002/3ZP-9544-002_zoom2.jpg?ts=1657402674&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-adidas-pro-next-n3xt-2021/02/3ZP-9544-002/3ZP-9544-002_zoom2.jpg?ts=1657402674&?ims=1088x'
+        ]
+      },
+      {
+        id: '6228fd63b7e6cb904bbe015c',
+        name: 'NIKE KD14 NRG',
+        price: 6.9,
+        imageUrl: [
+          'https://imgnike-a.akamaihd.net/900x900/02333715.jpg',
+          'https://imgnike-a.akamaihd.net/900x900/02333715A4.jpg'
+        ]
+      }
+    ]
+  },
+  {
     id: '623064ee22376f1e6b869471',
     name: 'male',
     displayName: 'Masculino',
     imageUrl:
-      'https://i.pinimg.com/564x/22/a4/26/22a42640da3a7ea2efd9c8d5a8a37fdb.jpg',
+      'https://i.pinimg.com/564x/49/12/d6/4912d68bcc6b6b04670e4dbd70e6cd78.jpg',
     products: [
       {
         id: '6230655f22376f1e6b869473',
@@ -254,7 +254,7 @@ const categories = [
     name: 'female',
     displayName: 'Feminino',
     imageUrl:
-      'https://i.pinimg.com/564x/aa/b5/d3/aab5d3afad6fc7e9ec6a7704d066692b.jpg',
+      'https://i.pinimg.com/564x/4d/76/0a/4d760aa2a1dfd9bbb065116869d94de5.jpg',
     products: [
       {
         id: '6228fe63b7e6cb904bbe0165',
