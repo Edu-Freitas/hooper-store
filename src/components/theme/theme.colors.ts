@@ -4,7 +4,8 @@ const Colors = {
     white: '#F8F9FA',
     dark: '#343A40',
     yellow: '#E4810E',
-    blue: '#001442'
+    blue: '#001442',
+    details: '#bdbdbd'
   },
   background: {
     white: '#F8F9FA',
