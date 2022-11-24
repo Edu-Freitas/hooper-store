@@ -5,7 +5,9 @@ const Colors = {
     dark: '#343A40',
     yellow: '#E4810E',
     blue: '#001442',
-    details: '#bdbdbd'
+    details: '#bdbdbd',
+    price: '#6b6b6b;',
+    red: '#8F003B'
   },
   background: {
     white: '#F8F9FA',

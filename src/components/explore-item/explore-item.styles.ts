@@ -1,39 +1,59 @@
 import styled from 'styled-components'
 import Colors from '../theme/theme.colors'
 
-interface ExploreItemImageProps {
-  imageUrl: string
-}
 export const ExploreItemContainer = styled.div`
-  height: 320px;
-  width: 160px;
+  height: 410px;
+  width: 410px;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
 `
 
-export const ExploreItemImage = styled.div<ExploreItemImageProps>`
+export const ExploreItemImage = styled.div`
+  height: 80%;
   width: 100%;
-  height: 70%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: ${(props) => `url('${props.imageUrl}')`};
+
+  img {
+    height: 90%;
+    width: 90%;
+  }
+
+  /* div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.15);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 0;
+    top: 0;
+  } */
 `
+
 export const ExploreItemDetails = styled.div`
-  width: 100%;
-  height: 30%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 1rem;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
 `
+
 export const ExploreItemDescription = styled.div`
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 5px;
+
+  h4 {
+    color: ${Colors.text.dark};
+  }
 
   span {
-    color: ${Colors.text.details};
-    font-size: 12px;
+    color: ${Colors.text.price};
   }
 `
