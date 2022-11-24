@@ -3,12 +3,12 @@ const { getFirestore } = require('firebase/firestore')
 const { initializeApp } = require('firebase/app')
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCIbAxCieeyVOjs88oiH1LPNwVFDpFos2k',
-  authDomain: 'hooper-s-f2d3c.firebaseapp.com',
-  projectId: 'hooper-s-f2d3c',
-  storageBucket: 'hooper-s-f2d3c.appspot.com',
-  messagingSenderId: '828322098516',
-  appId: '1:828322098516:web:97d3cef05d7c9a01b1ecc1'
+  apiKey: 'AIzaSyD-6FX2AOzPWNtm2LfzkYyXxEa2MjeWSk4',
+  authDomain: 'hooper-store-dfdee.firebaseapp.com',
+  projectId: 'hooper-store-dfdee',
+  storageBucket: 'hooper-store-dfdee.appspot.com',
+  messagingSenderId: '851406488096',
+  appId: '1:851406488096:web:7466f9ae2aeb3cba1e7245'
 }
 
 const app = initializeApp(firebaseConfig)
@@ -24,74 +24,74 @@ const categories = [
     products: [
       {
         id: '6228f7a3b7e6cb904bbe0134',
-        name: 'Penalty Crossover X',
+        name: 'Spalding Streetball',
         price: 0.9,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-penalty-crossover-x-58/06/D23-4146-206/D23-4146-206_zoom1.jpg?ts=1597845855&?ims=544xhttps://static.netshoes.com.br/produtos/bola-de-basquete-penalty-crossover-x-58/06/D23-4146-206/D23-4146-206_zoom1.jpg?ts=1597845855&?ims=1088x',
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-penalty-crossover-x-58/06/D23-4146-206/D23-4146-206_zoom2.jpg?ts=1597845855&?ims=544xhttps://static.netshoes.com.br/produtos/bola-de-basquete-penalty-crossover-x-58/06/D23-4146-206/D23-4146-206_zoom2.jpg?ts=1597845855&?ims=1088x'
+          'https://m.media-amazon.com/images/I/711nQzVrEZL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/71UBKrHERdL._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228f93db7e6cb904bbe0140',
-        name: 'NBA Wilson Authentic Heritage',
+        name: 'Champion Sports',
         price: 1.0,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-nba-wilson-authentic-heritage/38/D25-4831-138/D25-4831-138_zoom1.jpg?ts=1665505068&ims=544x',
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-nba-wilson-authentic-heritage/38/D25-4831-138/D25-4831-138_zoom3.jpg?ts=1665505068&?ims=544xhttps://static.netshoes.com.br/produtos/bola-de-basquete-nba-wilson-authentic-heritage/38/D25-4831-138/D25-4831-138_zoom3.jpg?ts=1665505068&?ims=1088x'
+          'https://m.media-amazon.com/images/I/81o+Tek84rL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/81ff1VauIqL._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228f8c7b7e6cb904bbe013b',
-        name: 'Spalding Tf-33 3X3 Fiba',
+        name: 'Molten FIBA',
         price: 0.5,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bola-basquete-spalding-tf-33-3x3-fiba-micr/74/IJS-0240-074/IJS-0240-074_zoom1.jpg?ts=1617011707&?ims=544xhttps://static.netshoes.com.br/produtos/bola-basquete-spalding-tf-33-3x3-fiba-micr/74/IJS-0240-074/IJS-0240-074_zoom1.jpg?ts=1617011707&?ims=1088x',
-          'https://static.netshoes.com.br/produtos/bola-basquete-spalding-tf-33-3x3-fiba-micr/74/IJS-0240-074/IJS-0240-074_zoom2.jpg?ts=1617011707&?ims=544xhttps://static.netshoes.com.br/produtos/bola-basquete-spalding-tf-33-3x3-fiba-micr/74/IJS-0240-074/IJS-0240-074_zoom2.jpg?ts=1617011707&?ims=1088x'
+          'https://m.media-amazon.com/images/I/91v6Jz3OteL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/919oJhh2-QL._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228f96bb7e6cb904bbe0142',
-        name: 'Wilson NBA Platinum Edition',
-        price: 1.5,
+        name: 'Spalding Legacy TF-1000',
+        price: 1.9,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-wilson-nba-platinum-edition-7/01/D25-3632-N01/D25-3632-N01_zoom1.jpg?ts=1656645769&ims=544x',
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-wilson-nba-platinum-edition-7/01/D25-3632-N01/D25-3632-N01_zoom2.jpg?ts=1656645769&?ims=544xhttps://static.netshoes.com.br/produtos/bola-de-basquete-wilson-nba-platinum-edition-7/01/D25-3632-N01/D25-3632-N01_zoom2.jpg?ts=1656645769&?ims=1088x'
+          'https://m.media-amazon.com/images/I/91pLiy70AZS._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/910JL5LCDES._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228f7f1b7e6cb904bbe0136',
-        name: 'Wilson NBA Gold Edition',
-        price: 1.9,
+        name: 'Wilson NBA DRV',
+        price: 1.0,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-wilson-nba-gold-edition-7/01/D25-3619-N01/D25-3619-N01_zoom1.jpg?ts=1656645774&ims=544x',
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-wilson-nba-gold-edition-7/01/D25-3619-N01/D25-3619-N01_zoom2.jpg?ts=1656645774&?ims=544xhttps://static.netshoes.com.br/produtos/bola-de-basquete-wilson-nba-gold-edition-7/01/D25-3619-N01/D25-3619-N01_zoom2.jpg?ts=1656645774&?ims=1088x'
+          'https://m.media-amazon.com/images/I/81kKAIFHjKL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/81pd0DQMqEL._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228f8afb7e6cb904bbe0139',
-        name: 'NBA Chicago Bulls Wilson Team Alliance',
+        name: 'Mikasa BX1000',
         price: 1.2,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-nba-chicago-bulls-wilson-team-alliance-7/95/D25-3627-795/D25-3627-795_zoom1.jpg?ts=1629222472&ims=544x',
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-nba-chicago-bulls-wilson-team-alliance-7/95/D25-3627-795/D25-3627-795_zoom3.jpg?ts=1629222472&?ims=544xhttps://static.netshoes.com.br/produtos/bola-de-basquete-nba-chicago-bulls-wilson-team-alliance-7/95/D25-3627-795/D25-3627-795_zoom3.jpg?ts=1629222472&?ims=1088x'
+          'https://m.media-amazon.com/images/I/717bzJLNB1L._AC_UL320_.jpg',
+          'https://m.media-amazon.com/images/I/716w4e-Q1jL._AC_SX569_.jpg'
         ]
       },
       {
         id: '6228f986b7e6cb904bbe0145',
-        name: 'Poker Supreme Star',
+        name: 'Penalty Mirim',
         price: 1.3,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-supreme-star-n-7-05725/41/D57-4742-D41/D57-4742-D41_zoom1.jpg?ts=1642499804&ims=544x',
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-supreme-star-n-7-05725/41/D57-4742-D41/D57-4742-D41_zoom3.jpg?ts=1642499804&?ims=544xhttps://static.netshoes.com.br/produtos/bola-de-basquete-supreme-star-n-7-05725/41/D57-4742-D41/D57-4742-D41_zoom3.jpg?ts=1642499804&?ims=1088x'
+          'https://m.media-amazon.com/images/I/71BnSmkXGXL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/71lr3OV9loL._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228f8f9b7e6cb904bbe013d',
-        name: 'Wilson NBA Forge Plus',
+        name: 'Penalty Shoot',
         price: 1.5,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-wilson-nba-forge-plus/12/D25-4103-012/D25-4103-012_zoom1.jpg?ts=1643292573&ims=544x',
-          'https://static.netshoes.com.br/produtos/bola-de-basquete-wilson-nba-forge-plus/12/D25-4103-012/D25-4103-012_zoom2.jpg?ts=1643292573&?ims=544xhttps://static.netshoes.com.br/produtos/bola-de-basquete-wilson-nba-forge-plus/12/D25-4103-012/D25-4103-012_zoom2.jpg?ts=1643292573&?ims=1088x'
+          'https://m.media-amazon.com/images/I/712LKdBMx-L._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/711cEaD-+qL._AC_SX522_.jpg'
         ]
       }
     ]
@@ -105,74 +105,74 @@ const categories = [
     products: [
       {
         id: '6228fc8bb7e6cb904bbe014e',
-        name: 'D-Rose Son of Chi 2',
+        name: 'Adidas Harden vol.6',
         price: 1.9,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-adidas-d-rose-son-of-chi-2/08/3ZP-9541-008/3ZP-9541-008_zoom1.jpg?ts=1657391310&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-adidas-d-rose-son-of-chi-2/08/3ZP-9541-008/3ZP-9541-008_zoom2.jpg?ts=1657391310&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-adidas-d-rose-son-of-chi-2/08/3ZP-9541-008/3ZP-9541-008_zoom2.jpg?ts=1657391310&?ims=1088x'
+          'https://m.media-amazon.com/images/I/71GXK6eUZhL._AC_SX500_.jpg',
+          'https://m.media-amazon.com/images/I/31QKDtvl6SL._AC_US40_.jpg'
         ]
       },
       {
         id: '6228fcb9b7e6cb904bbe0152',
-        name: 'NBA Nike Kd Trey 5 X',
+        name: 'Nike LeBron 19 Royalty',
         price: 2.9,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-nba-nike-kd-trey-5-x-masculino/73/2IC-8920-473/2IC-8920-473_zoom1.jpg?ts=1660733919&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-nba-nike-kd-trey-5-x-masculino/73/2IC-8920-473/2IC-8920-473_zoom2.jpg?ts=1660733919&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-nba-nike-kd-trey-5-x-masculino/73/2IC-8920-473/2IC-8920-473_zoom2.jpg?ts=1660733919&?ims=1088x'
+          'https://m.media-amazon.com/images/I/71bD8OKKF0L._AC_SX500_.jpg',
+          'https://m.media-amazon.com/images/I/31DvNvvGudL._AC_US40_.jpg'
         ]
       },
       {
         id: '6228fce4b7e6cb904bbe0154',
-        name: 'Nike Precision VI',
-        price: 3.5,
+        name: 'UnderArmour Spawn 3',
+        price: 1.5,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-nike-precision-vi-masculino/68/2IC-7496-868/2IC-7496-868_zoom1.jpg?ts=1659100370&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-nike-precision-vi-masculino/68/2IC-7496-868/2IC-7496-868_zoom2.jpg?ts=1659100370&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-nike-precision-vi-masculino/68/2IC-7496-868/2IC-7496-868_zoom2.jpg?ts=1659100370&?ims=1088x'
+          'https://m.media-amazon.com/images/I/5109BViW-3L._AC_SY500_.jpg',
+          'https://m.media-amazon.com/images/I/51WthCS5vML._AC_SY500_.jpg'
         ]
       },
       {
         id: '6228fd19b7e6cb904bbe0157',
-        name: 'Puma Triple Mid',
+        name: 'Nike LeBron 19 Low',
         price: 2.9,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-puma-triple-mid/74/2I3-3747-274/2I3-3747-274_zoom1.jpg?ts=1659712006&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-puma-triple-mid/74/2I3-3747-274/2I3-3747-274_zoom2.jpg?ts=1659712006&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-puma-triple-mid/74/2I3-3747-274/2I3-3747-274_zoom2.jpg?ts=1659712006&?ims=1088x'
+          'https://m.media-amazon.com/images/I/714KF2oWsiL._AC_SY500_.jpg',
+          'https://m.media-amazon.com/images/I/715jYZriWRL._AC_SY500_.jpg'
         ]
       },
       {
         id: '6228fd3bb7e6cb904bbe015a',
-        name: 'Under Armour Buzzer',
+        name: 'Nike Giannis Immortality',
         price: 1.5,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-under-armour-buzzer-masculino/72/39W-3125-172/39W-3125-172_zoom1.jpg?ts=1657802554&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-under-armour-buzzer-masculino/72/39W-3125-172/39W-3125-172_zoom2.jpg?ts=1657802554&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-under-armour-buzzer-masculino/72/39W-3125-172/39W-3125-172_zoom2.jpg?ts=1657802554&?ims=1088x'
+          'https://m.media-amazon.com/images/I/71SqvjUckoL._AC_SX500_.jpg',
+          'https://m.media-amazon.com/images/I/61DjbqFwAKL._AC_SX500_.jpg'
         ]
       },
       {
         id: '6228fda4b7e6cb904bbe015f',
-        name: 'Nike KD15',
-        price: 4.9,
+        name: 'Adidas Trae Young',
+        price: 0.9,
         imageUrl: [
-          'https://imgnike-a.akamaihd.net/900x900/023704ID.jpg',
-          'https://imgnike-a.akamaihd.net/900x900/023704IDA4.jpg'
+          'https://m.media-amazon.com/images/I/71ItPVBXJAL._AC_SY500_.jpg',
+          'https://m.media-amazon.com/images/I/41KuMeRw6eL._AC_US40_.jpg'
         ]
       },
       {
         id: '6228fca3b7e6cb904bbe0150',
-        name: 'Adidas Pró Next N3XT 2021',
+        name: 'Jordan 7 Retro',
         price: 1.5,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/tenis-adidas-pro-next-n3xt-2021/02/3ZP-9544-002/3ZP-9544-002_zoom1.jpg?ts=1657402674&ims=544x',
-          'https://static.netshoes.com.br/produtos/tenis-adidas-pro-next-n3xt-2021/02/3ZP-9544-002/3ZP-9544-002_zoom2.jpg?ts=1657402674&?ims=544xhttps://static.netshoes.com.br/produtos/tenis-adidas-pro-next-n3xt-2021/02/3ZP-9544-002/3ZP-9544-002_zoom2.jpg?ts=1657402674&?ims=1088x'
+          'https://m.media-amazon.com/images/I/515q5g2F8TL._AC_SX500_.jpg',
+          'https://m.media-amazon.com/images/I/51c-n-U9OdL._AC_SX500_.jpg'
         ]
       },
       {
         id: '6228fd63b7e6cb904bbe015c',
-        name: 'NIKE KD14 NRG',
-        price: 6.9,
+        name: 'Nike Air Zoom',
+        price: 2.9,
         imageUrl: [
-          'https://imgnike-a.akamaihd.net/900x900/02333715.jpg',
-          'https://imgnike-a.akamaihd.net/900x900/02333715A4.jpg'
+          'https://m.media-amazon.com/images/I/710KX7Q0tSL._AC_SY500_.jpg',
+          'https://m.media-amazon.com/images/I/71maqvo4TtL._AC_SY500_.jpg'
         ]
       }
     ]
@@ -186,65 +186,74 @@ const categories = [
     products: [
       {
         id: '6230655f22376f1e6b869473',
-        name: 'Regata  Los Angeles Lakers',
+        name: 'Bermuda Speedo',
         price: 0.5,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/regata-new-era-regular-nba-los-angeles-lakers-plus-size-masculino-preto/06/BRJ-1712-006/BRJ-1712-006_zoom1.jpg?ts=1666699928&ims=544x',
-          'https://static.netshoes.com.br/produtos/regata-new-era-regular-nba-los-angeles-lakers-plus-size-masculino-preto/06/BRJ-1712-006/BRJ-1712-006_zoom2.jpg?ts=1666699928&?ims=544xhttps://static.netshoes.com.br/produtos/regata-new-era-regular-nba-los-angeles-lakers-plus-size-masculino-preto/06/BRJ-1712-006/BRJ-1712-006_zoom2.jpg?ts=1666699928&?ims=1088x'
+          'https://m.media-amazon.com/images/I/61LCMxWdDvL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/61IMVNatpWL._AC_SX522_.jpg'
         ]
       },
       {
         id: '623065f422376f1e6b869488',
-        name: 'Camiseta New Era Boston Celtics',
+        name: 'Calção KKCare',
         price: 0.9,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/camiseta-new-era-boston-celtics-nba-energy-spirit/60/BRJ-1646-060/BRJ-1646-060_zoom1.jpg?ts=1666372989&ims=544x',
-          'https://static.netshoes.com.br/produtos/camiseta-new-era-boston-celtics-nba-energy-spirit/60/BRJ-1646-060/BRJ-1646-060_zoom2.jpg?ts=1666372989&?ims=544xhttps://static.netshoes.com.br/produtos/camiseta-new-era-boston-celtics-nba-energy-spirit/60/BRJ-1646-060/BRJ-1646-060_zoom2.jpg?ts=1666372989&?ims=1088x'
+          'https://m.media-amazon.com/images/I/618PqDkZnHL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/71EAIJkxhuS._AC_SX522_.jpg'
         ]
       },
       {
         id: '6230662e22376f1e6b86948e',
-        name: 'Regata New Era Regular NBA Chicago Bulls ',
+        name: 'Adidas Manga Curta',
         price: 0.5,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/regata-new-era-regular-nba-chicago-bulls-plus-size-masculino-vermelho/16/BRJ-1713-016/BRJ-1713-016_zoom1.jpg?ts=1666699950&ims=544x',
-          'https://static.netshoes.com.br/produtos/regata-new-era-regular-nba-chicago-bulls-plus-size-masculino-vermelho/16/BRJ-1713-016/BRJ-1713-016_zoom2.jpg?ts=1666699950&?ims=544xhttps://static.netshoes.com.br/produtos/regata-new-era-regular-nba-chicago-bulls-plus-size-masculino-vermelho/16/BRJ-1713-016/BRJ-1713-016_zoom2.jpg?ts=1666699950&?ims=1088x'
+          'https://m.media-amazon.com/images/I/81fsJS72F5L._AC_SY500_.jpg',
+          'https://m.media-amazon.com/images/I/81xHluxbxBL._AC_SY500_.jpg'
         ]
       },
       {
         id: '6230661122376f1e6b86948a',
-        name: 'Camiseta Regata Slam Dunk Ryonan',
+        name: 'Camiseta Spalding',
         price: 0.7,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/camisa-camiseta-regata-slam-dunk-ryonan-7/14/J6W-0225-014/J6W-0225-014_zoom1.jpg?ts=1666087426&ims=544x',
-          'https://static.netshoes.com.br/produtos/camisa-camiseta-regata-slam-dunk-ryonan-7/14/J6W-0225-014/J6W-0225-014_zoom2.jpg?ts=1666087426&?ims=544xhttps://static.netshoes.com.br/produtos/camisa-camiseta-regata-slam-dunk-ryonan-7/14/J6W-0225-014/J6W-0225-014_zoom2.jpg?ts=1666087426&?ims=1088x'
+          'https://m.media-amazon.com/images/I/91o0l5sndzL._AC_SY500_.jpg',
+          'https://m.media-amazon.com/images/I/91lteSpJ0ZL._AC_SY500_.jpg'
         ]
       },
       {
         id: '6230661f22376f1e6b86948c',
-        name: 'Bermuda Basquete M10 Action NY',
+        name: 'Calça Curtlo Guider',
         price: 1.4,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bermuda-basquete-plus-size-m10-action-ny-new-york/06/QAH-0123-006/QAH-0123-006_zoom1.jpg?ts=1666201736&ims=544x',
-          'https://static.netshoes.com.br/produtos/bermuda-basquete-plus-size-m10-action-ny-new-york/06/QAH-0123-006/QAH-0123-006_zoom2.jpg?ts=1666201736&?ims=544xhttps://static.netshoes.com.br/produtos/bermuda-basquete-plus-size-m10-action-ny-new-york/06/QAH-0123-006/QAH-0123-006_zoom2.jpg?ts=1666201736&?ims=1088x'
+          'https://m.media-amazon.com/images/I/51fEhy0TaPL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/51VUErTNI4L._AC_SX522_.jpg'
         ]
       },
       {
         id: '6230658322376f1e6b86947b',
-        name: 'CALÇA UNDER ARMOUR SPORTSTYLE',
+        name: 'Bermuda New Balance',
         price: 1.9,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/calca-under-armour-sportstyle-tricot-graphic/06/39W-5376-006/39W-5376-006_zoom1.jpg?ts=1664982138&ims=544x',
-          'https://static.netshoes.com.br/produtos/calca-under-armour-sportstyle-tricot-graphic/06/39W-5376-006/39W-5376-006_zoom2.jpg?ts=1664982138&?ims=544xhttps://static.netshoes.com.br/produtos/calca-under-armour-sportstyle-tricot-graphic/06/39W-5376-006/39W-5376-006_zoom2.jpg?ts=1664982138&?ims=1088x'
+          'https://m.media-amazon.com/images/I/51sU0y3G8PL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/51agrL9llmL._AC_SX522_.jpg'
         ]
       },
       {
         id: '623065b022376f1e6b869480',
-        name: 'JAQUETA CORTA VENTO NBA LOS ANGELES LAKERS',
+        name: 'Casaco Adidas Legend Shooter',
         price: 1.5,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/jaqueta-corta-vento-windbreaker-nba-los-angeles-lakers-neutral-wild-preto-new-era/06/1XB-9639-006/1XB-9639-006_zoom1.jpg?ts=1650895450&ims=544x',
-          'https://static.netshoes.com.br/produtos/jaqueta-corta-vento-windbreaker-nba-los-angeles-lakers-neutral-wild-preto-new-era/06/1XB-9639-006/1XB-9639-006_zoom2.jpg?ts=1650895450&?ims=544xhttps://static.netshoes.com.br/produtos/jaqueta-corta-vento-windbreaker-nba-los-angeles-lakers-neutral-wild-preto-new-era/06/1XB-9639-006/1XB-9639-006_zoom2.jpg?ts=1650895450&?ims=1088x'
+          'https://m.media-amazon.com/images/I/51EZB+zWuYL._AC_SX385_.jpg',
+          'https://m.media-amazon.com/images/I/51VbC6JC3zL._AC_SX385_.jpg'
+        ]
+      },
+      {
+        id: '623065b022376f1e6b869480',
+        name: 'Short Uppercut',
+        price: 1.5,
+        imageUrl: [
+          'https://m.media-amazon.com/images/I/51rQY39DfDL._AC_SX569_.jpg',
+          'https://m.media-amazon.com/images/I/41xXRStl1VL._AC_.jpg'
         ]
       }
     ]
@@ -258,65 +267,65 @@ const categories = [
     products: [
       {
         id: '6228fe63b7e6cb904bbe0165',
-        name: 'Camiseta Nike Chicago Bulls',
+        name: 'Camiseta Nike Jersey',
         price: 0.8,
         imageUrl: [
-          'https://imgnike-a.akamaihd.net/900x900/023689P1.jpg',
-          'https://imgnike-a.akamaihd.net/900x900/023689P1A1.jpg'
+          'https://m.media-amazon.com/images/I/71pAa7o6kqL._AC_SY500_.jpg',
+          'https://m.media-amazon.com/images/I/71YPEs1KilL._AC_SY500_.jpg'
         ]
       },
       {
         id: '6228fec7b7e6cb904bbe016f',
-        name: 'Camiseta Nike Los Angeles Lakers ',
+        name: 'Camiseta Alleson ',
         price: 0.8,
         imageUrl: [
-          'https://imgnike-a.akamaihd.net/900x900/0239780L.jpg',
-          'https://imgnike-a.akamaihd.net/900x900/0239780LA1.jpg'
+          'https://m.media-amazon.com/images/I/81MmdxK7+VL._AC_SY500_.jpg',
+          'https://m.media-amazon.com/images/I/91ryP3ZtYZL._AC_SY500_.jpg'
         ]
       },
       {
         id: '6228ff71b7e6cb904bbe0175',
-        name: 'Shorts Feminino Boxe',
+        name: 'Shorts CRZ',
         price: 0.5,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/shorts-feminino-boxe/16/57G-0083-016/57G-0083-016_zoom1.jpg?ts=1644593807&ims=544x',
-          'https://static.netshoes.com.br/produtos/shorts-feminino-boxe/16/57G-0083-016/57G-0083-016_zoom2.jpg?ts=1644593807&?ims=544xhttps://static.netshoes.com.br/produtos/shorts-feminino-boxe/16/57G-0083-016/57G-0083-016_zoom2.jpg?ts=1644593807&?ims=1088x'
+          'https://m.media-amazon.com/images/I/81JCLjgO21L._AC_SY500_.jpg',
+          'https://m.media-amazon.com/images/I/71oTImcfAzL._AC_SY500_.jpg'
         ]
       },
       {
         id: '6228ff93b7e6cb904bbe0177',
-        name: 'Shorts UnderArmour Feminino Estampado',
+        name: 'Shorts STKOOBQ',
         price: 1.0,
         imageUrl: [
-          'https://underarmour.scene7.com/is/image/Underarmour/V5-1370302-002_FC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500',
-          'https://underarmour.scene7.com/is/image/Underarmour/V5-1370302-002_BC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500'
+          'https://m.media-amazon.com/images/I/61y3URKjt+L._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/618NRXIDBUL._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228fe80b7e6cb904bbe0168',
-        name: 'Moletom Adidas Hoop York City Crewneck',
+        name: 'Shorts Running',
         price: 1.5,
         imageUrl: [
-          'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e5c8b2e5a9ac43649d50ae0501590c50_9366/Moletom_Hoop_York_City_Crewneck_Azul_HD2876_01_laydown.jpg',
-          'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/af2908067610475d8311ae0a01580c4a_9366/Moletom_Hoop_York_City_Crewneck_Azul_HD2876_41_detail.jpg'
+          'https://m.media-amazon.com/images/I/510NckmuxbL._AC_SX679_.jpg',
+          'https://m.media-amazon.com/images/I/618NRXIDBUL._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228ff31b7e6cb904bbe0172',
-        name: 'Shorts Adidas Hoop York City Malha',
+        name: 'Calça New Balance',
         price: 1.0,
         imageUrl: [
-          'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d1744e4b585c4823a09eae04000e4438_9366/Shorts_Hoop_York_City_Malha_Turquesa_HB0693_25_model.jpg',
-          'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ab101a9071534112aba6ae04000cb54e_9366/Shorts_Hoop_York_City_Malha_Turquesa_HB0693_23_hover_model.jpg'
+          'https://m.media-amazon.com/images/I/41woKlvUyjL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/41PET36cs1L._AC_SX522_.jpg'
         ]
       },
       {
         id: '62290014b7e6cb904bbe017c',
-        name: 'Moletom Capuz Hoop York City',
+        name: 'Calça Colcci',
         price: 1.5,
         imageUrl: [
-          'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a207ae330ff64ea5b232ae46002ac181_9366/Moletom_Capuz_Hoop_York_City_Roxo_HE1264_01_laydown.jpg',
-          'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5ee819089370406187f2ae7c0177fe20_9366/Moletom_Capuz_Hoop_York_City_Roxo_HE1264_42_detail.jpg'
+          'https://m.media-amazon.com/images/I/718ywrZlA6L._AC_SY500_.jpg',
+          'https://m.media-amazon.com/images/I/7122P8MJ2aL._AC_SY500_.jpg'
         ]
       }
     ]
@@ -330,70 +339,70 @@ const categories = [
     products: [
       {
         id: '6228f5beb7e6cb904bbe0119',
-        name: 'Mochila Nike Hoops Elite Pro ',
+        name: 'Xiaomi SmartWatch',
         price: 2.5,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/mochila-nike-hoops-elite-pro-unissex/10/JD8-0495-010/JD8-0495-010_zoom2.jpg?ts=1667213859&?ims=544xhttps://static.netshoes.com.br/produtos/mochila-nike-hoops-elite-pro-unissex/10/JD8-0495-010/JD8-0495-010_zoom2.jpg?ts=1667213859&?ims=1088x',
-          'https://static.netshoes.com.br/produtos/mochila-nike-hoops-elite-pro-unissex/10/JD8-0495-010/JD8-0495-010_zoom3.jpg?ts=1667213859&?ims=544xhttps://static.netshoes.com.br/produtos/mochila-nike-hoops-elite-pro-unissex/10/JD8-0495-010/JD8-0495-010_zoom3.jpg?ts=1667213859&?ims=1088x'
+          'https://m.media-amazon.com/images/I/61CH+9X+ynL._AC_SX425_.jpg',
+          'https://m.media-amazon.com/images/I/61LHfHqAEVL._AC_SX425_.jpg'
         ]
       },
       {
         id: '6228f60bb7e6cb904bbe011f',
-        name: 'Bone 9twenty Golden State Warriors',
+        name: 'Testeira Wilson',
         price: 0.8,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bone-9twenty-golden-state-warriors-tip-off-aba-curva-aba-curva-strapback-preto-new-era/06/BRJ-1822-006/BRJ-1822-006_zoom2.jpg?ts=1667006762&?ims=544xhttps://static.netshoes.com.br/produtos/bone-9twenty-golden-state-warriors-tip-off-aba-curva-aba-curva-strapback-preto-new-era/06/BRJ-1822-006/BRJ-1822-006_zoom2.jpg?ts=1667006762&?ims=1088x',
-          'https://static.netshoes.com.br/produtos/bone-9twenty-golden-state-warriors-tip-off-aba-curva-aba-curva-strapback-preto-new-era/06/BRJ-1822-006/BRJ-1822-006_zoom1.jpg?ts=1667006762&ims=544x'
+          'https://m.media-amazon.com/images/I/61AtjriUuXL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/51oltoXrGJL._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228f6c8b7e6cb904bbe012c',
-        name: 'Pulseiras NBA Diversas',
+        name: 'Adidas Tiara Unissex',
         price: 1.0,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/pulseira-basquete-logo-liga-americana-boston-utah-miami/08/HS2-0061-008/HS2-0061-008_zoom1.jpg?ts=1665765699&ims=544x',
-          'https://static.netshoes.com.br/produtos/pulseira-brooklyn-kidd-basquete-kd-irving-james-the-beard/06/HS2-0064-006/HS2-0064-006_zoom1.jpg?ts=1665765857&ims=544x'
+          'https://m.media-amazon.com/images/I/71TPE88KktL._AC_SX569_.jpg',
+          'https://m.media-amazon.com/images/I/81dNp8EuHyL._AC_SX569_.jpg'
         ]
       },
       {
         id: '6228f5e8b7e6cb904bbe011d',
-        name: 'Mochila Impermeável Hoop',
+        name: 'Mochila Tendy',
         price: 2.0,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/mochila-impermeavel-executiva-trabalho-stargap-st-802/06/9IX-0001-006/9IX-0001-006_zoom2.jpg?ts=1665158774&?ims=544xhttps://static.netshoes.com.br/produtos/mochila-impermeavel-executiva-trabalho-stargap-st-802/06/9IX-0001-006/9IX-0001-006_zoom2.jpg?ts=1665158774&?ims=1088x',
-          'https://static.netshoes.com.br/produtos/mochila-impermeavel-executiva-trabalho-stargap-st-802/06/9IX-0001-006/9IX-0001-006_zoom1.jpg?ts=1665158774&?ims=544xhttps://static.netshoes.com.br/produtos/mochila-impermeavel-executiva-trabalho-stargap-st-802/06/9IX-0001-006/9IX-0001-006_zoom1.jpg?ts=1665158774&?ims=1088x'
+          'https://m.media-amazon.com/images/I/61LflRis5ML._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/61ulr3mbI5L._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228f68eb7e6cb904bbe0125',
-        name: 'Boné Brooklyn Nets NBA',
+        name: 'Manguito Nike',
         price: 0.8,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bone-950-brooklyn-nets-nba-aba-reta-new-era/16/IJX-0265-016/IJX-0265-016_zoom2.jpg?ts=1627668316&?ims=544xhttps://static.netshoes.com.br/produtos/bone-950-brooklyn-nets-nba-aba-reta-new-era/16/IJX-0265-016/IJX-0265-016_zoom2.jpg?ts=1627668316&?ims=1088x',
-          'https://static.netshoes.com.br/produtos/bone-950-brooklyn-nets-nba-aba-reta-new-era/16/IJX-0265-016/IJX-0265-016_zoom3.jpg?ts=1627668316&?ims=544xhttps://static.netshoes.com.br/produtos/bone-950-brooklyn-nets-nba-aba-reta-new-era/16/IJX-0265-016/IJX-0265-016_zoom3.jpg?ts=1627668316&?ims=1088x'
+          'https://m.media-amazon.com/images/I/51zuNZo8RxL._AC_SX679_.jpg',
+          'https://m.media-amazon.com/images/I/81cCt42kVdL._AC_SY879_.jpg'
         ]
       },
       {
         id: '6228f591b7e6cb904bbe0115',
-        name: 'Bucket NBA Golden State Warriors',
+        name: 'Munhequeira Adidas',
         price: 1.0,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/bucket-new-eranba-golden-state-warriors-global-collection/08/IJX-5119-008/IJX-5119-008_zoom2.jpg?ts=1645014657&?ims=544xhttps://static.netshoes.com.br/produtos/bucket-new-eranba-golden-state-warriors-global-collection/08/IJX-5119-008/IJX-5119-008_zoom2.jpg?ts=1645014657&?ims=1088x',
-          'https://static.netshoes.com.br/produtos/bucket-new-eranba-golden-state-warriors-global-collection/08/IJX-5119-008/IJX-5119-008_zoom1.jpg?ts=1645014657&?ims=544xhttps://static.netshoes.com.br/produtos/bucket-new-eranba-golden-state-warriors-global-collection/08/IJX-5119-008/IJX-5119-008_zoom1.jpg?ts=1645014657&?ims=1088x'
+          'https://m.media-amazon.com/images/I/61H+WAZeWZL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/71Sh-IqIxhL._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228f625b7e6cb904bbe0121',
-        name: 'Gorro Brooklyn Nets',
+        name: 'Bucket Nike',
         price: 0.9,
         imageUrl: [
-          'https://static.netshoes.com.br/produtos/gorro-brooklyn-nets-nba-core-preto-new-era/06/1XB-9246-006/1XB-9246-006_zoom1.jpg?ts=1665496088&ims=544x',
-          'https://static.netshoes.com.br/produtos/gorro-brooklyn-nets-nba-core-preto-new-era/06/1XB-9246-006/1XB-9246-006_zoom3.jpg?ts=1665496088&?ims=544xhttps://static.netshoes.com.br/produtos/gorro-brooklyn-nets-nba-core-preto-new-era/06/1XB-9246-006/1XB-9246-006_zoom3.jpg?ts=1665496088&?ims=1088x'
+          'https://m.media-amazon.com/images/I/61yntXj5ULL._AC_SX522_.jpg',
+          'https://m.media-amazon.com/images/I/61KX6w2e0UL._AC_SX522_.jpg'
         ]
       },
       {
         id: '6228f648b7e6cb904bbe0123',
-        name: 'Mochila NBA Authentic Series',
+        name: 'Boné Nike',
         price: 1.9,
         imageUrl: [
           'https://static.netshoes.com.br/produtos/mochila-nba-authentic-series-preto-wilson/06/D25-4014-006/D25-4014-006_zoom1.jpg?ts=1638362098&ims=544x',

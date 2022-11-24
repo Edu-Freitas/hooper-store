@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const CategoriesContainer = styled.div`
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,8 +15,8 @@ export const CategoriesContent = styled.div`
   width: 1920px;
   display: grid;
   grid-template-areas:
-    'e e e c b'
-    'a a a d d';
+    'd d d c b'
+    'a a a e e';
   grid-gap: 25px;
   padding: 30px;
 

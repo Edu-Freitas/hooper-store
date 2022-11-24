@@ -6,14 +6,15 @@ import { getFirestore } from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyCIbAxCieeyVOjs88oiH1LPNwVFDpFos2k',
-  authDomain: 'hooper-s-f2d3c.firebaseapp.com',
-  projectId: 'hooper-s-f2d3c',
-  storageBucket: 'hooper-s-f2d3c.appspot.com',
-  messagingSenderId: '828322098516',
-  appId: '1:828322098516:web:97d3cef05d7c9a01b1ecc1'
+  apiKey: 'AIzaSyD-6FX2AOzPWNtm2LfzkYyXxEa2MjeWSk4',
+  authDomain: 'hooper-store-dfdee.firebaseapp.com',
+  projectId: 'hooper-store-dfdee',
+  storageBucket: 'hooper-store-dfdee.appspot.com',
+  messagingSenderId: '851406488096',
+  appId: '1:851406488096:web:7466f9ae2aeb3cba1e7245'
 }
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig)
+const app = initializeApp(firebaseConfig)
+
 export const db = getFirestore(app)
