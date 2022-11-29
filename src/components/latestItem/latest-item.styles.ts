@@ -23,9 +23,20 @@ export const LatestItemDescription = styled.div`
     }
   }
 `
-export const LatestItemsSlider = styled.div`
+export const LatestItemsShow = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+`
+export const LatestItemButton = styled.div`
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  button {
+    padding: 20px;
+  }
 `

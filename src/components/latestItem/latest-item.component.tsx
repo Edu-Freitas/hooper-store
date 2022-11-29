@@ -1,18 +1,27 @@
 // Vai receber uma categoria e pegar 3 de seus produtos, utilizando seus dados para nome de item.
 // No futuro, essa tag deve ser um carrossel
 
-import { useContext } from 'react'
+import { FunctionComponent, useContext } from 'react'
 import { CategoryContext } from '../../contexts/category.context'
+import CustomButton from '../custom-button/custom-button.component'
 import ExploreItem from '../explore-item/explore-item.component'
+import { BiRightArrow } from 'react-icons/bi'
 import {
+  LatestItemButton,
   LatestItemContainer,
   LatestItemDescription,
-  LatestItemsSlider
+  LatestItemsShow
 } from './latest-item.styles'
+import Colors from '../theme/theme.colors'
 
-const LatestItem = () => {
+interface LatestItemIndexProps {
+  sliceIndex: number[]
+}
+const LatestItem: FunctionComponent<LatestItemIndexProps> = ({
+  sliceIndex
+}) => {
   const { categories } = useContext(CategoryContext)
-  const choosedCategories = categories.slice(1, 3)
+  const choosedCategories = categories.slice(sliceIndex[0], sliceIndex[1])
 
   return (
     <>
@@ -23,7 +32,7 @@ const LatestItem = () => {
               Novidades em <span>{category.displayName}</span>
             </h1>
           </LatestItemDescription>
-          <LatestItemsSlider>
+          <LatestItemsShow>
             <ExploreItem
               product={category.products[0]}
               key={category.products[0].id}
@@ -36,9 +45,17 @@ const LatestItem = () => {
               product={category.products[2]}
               key={category.products[2].id}
             />
-          </LatestItemsSlider>
+            <CustomButton filled={false}>
+              {/* Esse botão vai levar à página de exploração dessa categoria. */}
+              <BiRightArrow size={24} color={Colors.text.dark} />
+            </CustomButton>
+          </LatestItemsShow>
         </LatestItemContainer>
       ))}
+      <LatestItemButton>
+        {/* Esse botão vai levar À pagina de prévia de todas as categorias */}
+        <CustomButton filled={false}>Ver Mais</CustomButton>
+      </LatestItemButton>
     </>
   )
 }

@@ -16,6 +16,7 @@ const Header = () => {
       </HeaderLogo>
       <HeaderItems>
         <HeaderItem>Explorar</HeaderItem>
+        <HeaderItem>Novidades</HeaderItem>
         <HeaderItem>Login</HeaderItem>
         <HeaderItem>Criar conta</HeaderItem>
         <HeaderItem>

@@ -15,4 +15,5 @@ export const Button = styled.button<ButtonProps>`
     props.filled ? Colors.background.dark : 'transparent'};
   border: ${(props) =>
     props.filled ? 'none' : `1px solid ${Colors.background.dark}`};
+  cursor: pointer;
 `
