@@ -1,22 +1,30 @@
 import styled from 'styled-components'
 import Colors from '../theme/theme.colors'
 
+interface ExploreItemImageProps {
+  imageUrl: string
+}
 export const ExploreItemContainer = styled.div`
-  height: 410px;
-  width: 410px;
+  width: 350px;
+  height: 440px;
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
 `
 
-export const ExploreItemImage = styled.div`
+export const ExploreItemImage = styled.div<ExploreItemImageProps>`
+  background-image: ${(props) => `url('${props.imageUrl}')`};
   height: 80%;
-  width: 100%;
-
-  img {
-    height: 90%;
-    width: 90%;
-  }
+  min-height: 352px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  background-blend-mode: color;
 
   /* div {
     height: 100%;
@@ -35,7 +43,6 @@ export const ExploreItemDetails = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 1rem;
   margin: 1rem;
   ul {
     list-style: none;

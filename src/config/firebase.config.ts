@@ -6,12 +6,12 @@ import { getFirestore } from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyD-6FX2AOzPWNtm2LfzkYyXxEa2MjeWSk4',
-  authDomain: 'hooper-store-dfdee.firebaseapp.com',
-  projectId: 'hooper-store-dfdee',
-  storageBucket: 'hooper-store-dfdee.appspot.com',
-  messagingSenderId: '851406488096',
-  appId: '1:851406488096:web:7466f9ae2aeb3cba1e7245'
+  apiKey: 'AIzaSyBCq1kgY_txFqhxR5PqkgwBdDXl66Ty1PI',
+  authDomain: 'hooper-store-7561e.firebaseapp.com',
+  projectId: 'hooper-store-7561e',
+  storageBucket: 'hooper-store-7561e.appspot.com',
+  messagingSenderId: '1001025879729',
+  appId: '1:1001025879729:web:5c173bfb297497d086ec90'
 }
 
 // Initialize Firebase

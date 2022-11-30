@@ -17,10 +17,7 @@ interface ExploreItemProps {
 const ExploreItem: FunctionComponent<ExploreItemProps> = ({ product }) => {
   return (
     <ExploreItemContainer>
-      <ExploreItemImage>
-        <img src={product.imageUrl[0]} alt={product.name}></img>
-        <div></div>
-      </ExploreItemImage>
+      <ExploreItemImage imageUrl={product.imageUrl[0]}></ExploreItemImage>
       <ExploreItemDetails>
         <ExploreItemDescription>
           <h4>{product.name}</h4>
