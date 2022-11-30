@@ -14,8 +14,7 @@ export const HeaderLogo = styled.div`
   font-weight: bold;
   display: flex;
   align-items: center;
-
-  h2 {
+  cur h2 {
     color: ${Colors.text.white};
   }
   span {
@@ -38,7 +37,15 @@ export const HeaderItem = styled.div`
 
   &:nth-child(1),
   &:nth-child(2),
-  &:nth-child(3) {
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(5) {
     margin-right: 40px;
+  }
+
+  &:nth-child(3) {
+    svg {
+      margin-left: 5px;
+    }
   }
 `
